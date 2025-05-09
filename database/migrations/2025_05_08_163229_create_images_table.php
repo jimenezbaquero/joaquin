@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('path');
             $table->date('date');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 

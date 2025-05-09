@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Locality;
+use App\Models\Province;
 use Illuminate\Http\Request;
 
 class LocalityController extends Controller
@@ -61,5 +62,9 @@ class LocalityController extends Controller
     public function destroy(Locality $locality)
     {
         //
+    }
+    
+    public static function getLocalities(Province $province){
+        return $province->localities()->orderBY('name', 'asc')->get();
     }
 }

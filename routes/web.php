@@ -1,18 +1,25 @@
 <?php
 
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\LocalityController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProvinceController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
+    return Inertia::render('Home', [
+        'canLogin' => false,
+        'canRegister' => false,
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
+        'provinces' => ProvinceController::getProvinces(),
     ]);
 });
+
+Route::get('/localities/{province}', [LocalityController::class,'getLocalities'])->name('getLocalities');
+Route::get('/images/{locality}', [ImageController::class,'getImages'])->name('getImages');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

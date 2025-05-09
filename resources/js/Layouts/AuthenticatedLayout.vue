@@ -10,7 +10,7 @@ import {Link} from '@inertiajs/vue3';
 const showingNavigationDropdown = ref(false);
 
 const classes = (current) => {
-    let aux = 'block px-4 py-2 text-sm rounded-md transition-colors duration-200 border-none outline-none'
+    let aux = 'block px-4 py-2 text-sm rounded-md transition-colors duration-200 border-none outline-none dev'
     let aux2 = route().current(current)? ' bg-green-600 text-white' : ' text-gray-700 hover:bg-green-100 hover:text-green-800'
     return aux + aux2
   }

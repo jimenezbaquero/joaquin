@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Image;
+use App\Models\Locality;
 use Illuminate\Http\Request;
 
 class ImageController extends Controller
@@ -61,5 +62,9 @@ class ImageController extends Controller
     public function destroy(Image $image)
     {
         //
+    }
+    
+    public static function getImages(Locality $locality){
+        return $locality->images()->orderBy('date')->get();
     }
 }

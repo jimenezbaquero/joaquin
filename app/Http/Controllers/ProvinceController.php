@@ -62,4 +62,8 @@ class ProvinceController extends Controller
     {
         //
     }
+    
+    public static function getProvinces(){
+        return Province::orderBy('name','asc')->get();
+    }
 }

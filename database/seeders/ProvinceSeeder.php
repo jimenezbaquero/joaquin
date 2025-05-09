@@ -1,0 +1,223 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\Province;
+use Illuminate\Support\Facades\DB;
+
+class ProvinceSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('provinces')->delete();
+        
+        DB::table('provinces')->insert([
+            [
+                'id' => 1,
+                'name' => 'Álava'
+            ],
+            [
+                'id' => 2,
+                'name' => 'Albacete'
+            ],
+            [
+                'id' => 3,
+                'name' => 'Alicante'
+            ],
+            [
+                'id' => 4,
+                'name' => 'Almería'
+            ],
+            [
+                'id' => 5,
+                'name' => 'Asturias'
+            ],
+            [
+                'id' => 6,
+                'name' => 'Ávila'
+            ],
+            [
+                'id' => 7,
+                'name' => 'Badajoz'
+            ],
+            [
+                'id' => 8,
+                'name' => 'Barcelona'
+            ],
+            [
+                'id' => 9,
+                'name' => 'Burgos'
+            ],
+            [
+                'id' => 10,
+                'name' => 'Cáceres'
+            ],
+            [
+                'id' => 11,
+                'name' => 'Cádiz'
+            ],
+            [
+                'id' => 12,
+                'name' => 'Cantabria'
+            ],
+            [
+                'id' => 13,
+                'name' => 'Castellón'
+            ],
+            [
+                'id' => 14,
+                'name' => 'Ciudad Real'
+            ],
+            [
+                'id' => 15,
+                'name' => 'Córdoba'
+            ],
+            [
+                'id' => 16,
+                'name' => 'Cuenca'
+            ],
+            [
+                'id' => 17,
+                'name' => 'Girona'
+            ],
+            [
+                'id' => 18,
+                'name' => 'Granada'
+            ],
+            [
+                'id' => 19,
+                'name' => 'Guadalajara'
+            ],
+            [
+                'id' => 20,
+                'name' => 'Gipuzkoa'
+            ],
+            [
+                'id' => 21,
+                'name' => 'Huelva'
+            ],
+            [
+                'id' => 22,
+                'name' => 'Huesca'
+            ],
+            [
+                'id' => 23,
+                'name' => 'Islas Baleares'
+            ],
+            [
+                'id' => 24,
+                'name' => 'Jaén'
+            ],
+            [
+                'id' => 25,
+                'name' => 'A Coruña'
+            ],
+            [
+                'id' => 26,
+                'name' => 'La Rioja'
+            ],
+            [
+                'id' => 27,
+                'name' => 'Las Palmas'
+            ],
+            [
+                'id' => 28,
+                'name' => 'León'
+            ],
+            [
+                'id' => 29,
+                'name' => 'Lleida'
+            ],
+            [
+                'id' => 30,
+                'name' => 'Lugo'
+            ],
+            [
+                'id' => 31,
+                'name' => 'Madrid'
+            ],
+            [
+                'id' => 32,
+                'name' => 'Málaga'
+            ],
+            [
+                'id' => 33,
+                'name' => 'Murcia'
+            ],
+            [
+                'id' => 34,
+                'name' => 'Navarra'
+            ],
+            [
+                'id' => 35,
+                'name' => 'Ourense'
+            ],
+            [
+                'id' => 36,
+                'name' => 'Palencia'
+            ],
+            [
+                'id' => 37,
+                'name' => 'Pontevedra'
+            ],
+            [
+                'id' => 38,
+                'name' => 'Salamanca'
+            ],
+            [
+                'id' => 39,
+                'name' => 'Santa Cruz de Tenerife'
+            ],
+            [
+                'id' => 40,
+                'name' => 'Segovia'
+            ],
+            [
+                'id' => 41,
+                'name' => 'Sevilla'
+            ],
+            [
+                'id' => 42,
+                'name' => 'Soria'
+            ],
+            [
+                'id' => 43,
+                'name' => 'Tarragona'
+            ],
+            [
+                'id' => 44,
+                'name' => 'Teruel'
+            ],
+            [
+                'id' => 45,
+                'name' => 'Toledo'
+            ],
+            [
+                'id' => 46,
+                'name' => 'Valencia'
+            ],
+            [
+                'id' => 47,
+                'name' => 'Valladolid'
+            ],
+            [
+                'id' => 48,
+                'name' => 'Bizkaia'
+            ],
+            [
+                'id' => 49,
+                'name' => 'Zamora'
+            ],
+            [
+                'id' => 50,
+                'name' => 'Zaragoza'
+            ]
+        ]);
+    }
+}
+
+
